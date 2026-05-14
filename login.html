@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Login Page</title>
+    <script src="java.js"></script>
+     <link rel="stylesheet" href="css2.css">
+  </head>
+  <body >
+    <form  action="php2.php" method="post">
+    <table   align="center" id="log">
+      <tr>
+        <th colspan="2" id="titel">welcome</th>
+      </tr>
+      <td colspan="2" align="center"><img src="log.jpg" width="100"></td>
+      
+      <tr>
+        <th  id="n1"><label for="inpt">E_mail :</label></th>
+        <th ><input id="inpt" name="mail" type="text" oninput="validation_login()"></th>
+      </tr>
+      <tr id="line1"></tr>
+      <tr>
+        <th id="n2"><label for="inpt0" > moot de passe :</label></th>
+        <th ><input id="inpt0" type="password" name="mot" oninput="validation_login()"></th>
+      </tr>
+      <tr id="line"></tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" value="login" id="betton" onclick=" return validation_login();" />
+        <input type="reset" value="Effacer"  id="betton"/></td>
+      </tr>
+      <tr>
+        
+        <td colspan="2" align="center" ><a href="inscrption.html">s'inseric</td>
+      </tr>
+    
+    </table>
+    </form>
+    </body>
+    
+    </html>

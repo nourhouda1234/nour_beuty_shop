@@ -1,0 +1,73 @@
+
+body{
+  background-image: url(kalfi.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+table{
+  border-radius: 30px;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: auto;
+  padding: 50px 50px;
+
+}
+th ,td {
+  background-color: #e3f2fd96;
+  padding: 10px 10px;
+  font-size: smaller;
+}
+
+
+#main-title{
+  color: #0096d6;
+  font-size: 36px;
+  text-align: center;
+  font-family:   Impact;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+#betton:hover {background-color: #0077ab;}
+#betton{
+  background-color: #0096d6;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 20px;
+ cursor: pointer;
+  font-weight: bold;
+  border:1px solid #ccc;
+ padding:8px;
+ transition: 0.4s;
+ 
+}
+#betton:focus{
+  outline: none;
+  border: 2px solid #0096d6;
+  box-shadow: 0 0 5px rgba(80, 190, 237, 0.5);
+}
+#acc1,#acc2,#acc3,#acc4,#acc5,#acc6,#acc7,#acc8,#acc9 ,#acc10,#acc11{
+  
+color: #50acfc;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+#wil{
+color: #50acfc;
+font-family: "Segoe UI", sans-serif;
+}
+#name,#confi,#adre,#moot,#Email,#tele,#age,#prenom,#wil{
+     border-radius: 25px;
+     cursor: pointer;
+      font-weight: bold;
+  border:1px solid #ccc;
+ padding:5px;
+ transition: 5s;
+  border: 2px solid #0096d6;
+  box-shadow: 0 0 2px rgba(80, 190, 237, 0.5);
+}
+

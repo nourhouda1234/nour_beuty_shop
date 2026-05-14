@@ -1,0 +1,136 @@
+<!doctype html>
+<html >
+  <head>
+    <link rel="stylesheet" href="css1.css">
+    <title>Accounter Creation page</title>
+     <script src="java2.js"></script>
+  </head>
+  <body>
+     <form action="php1.php" method="post" onsubmit="return  validation_nour()">
+    <table>
+      <td colspan="2" id="main-title">CREATE AN ACCOUNT</td>
+      <tr>
+      
+        <th id="acc1"><label for="name">Last Name:</label></th>
+        <th ><input  id="name" type="text" name="nom"  oninput="validation_nour()"/></th>
+       </tr>
+       <tr id="line"></tr>
+       <tr>
+        <th id="acc2"><label for="prenom">First Name :</label></th>
+        <th><input  id="prenom" type="text" name="prenom" oninput="validation_nour()" /></th>
+       </tr>
+       <tr id="line1"></tr>
+       <tr>
+        <th id="acc3"><label for="age">Age :</label></th>
+        <th><input id="age" type="text" name="Age"  oninput="validation_nour()"/></th>
+       </tr>
+       <tr id="line2"></tr>
+       <tr>
+        <th id="acc4"><label for="wilaya1">Wilaya :</label></th>
+        <th >
+          <select id="wil" onchange="checkWilaya()" name="wilaya">
+        <option value="1">01- Adrar</option>
+        <option value="2">02- Chlef</option>
+        <option value="3">03- Laghouat</option>
+        <option value="4">04- Oum El Bouaghi</option>
+       <option value="5">05- Batna</option>
+       <option value="6">06- Béjaïa</option>
+       <option value="7">07- Biskra</option>
+       <option value="8">08- Béchar</option>
+       <option value="9">09- Blida</option>
+       <option value="10">10- Bouira</option>
+       <option value="11">11- Tamanrasset</option>
+       <option value="12">12- Tébessa</option>
+       <option value="13">13- Tlemcen</option>
+       <option value="14">14- Tiaret</option>
+       <option value="15">15- Tizi Ouzou</option>
+       <option value="16">16- Alger</option>
+       <option value="17">17- Djelfa</option>
+       <option value="18">18- Jijel</option>
+       <option value="19">19- Sétif</option>
+       <option value="20">20- Saïda</option>
+       <option value="21">21- Skikda</option>
+       <option value="22">22- Sidi Bel Abbès</option>
+       <option value="23">23- Annaba</option>
+       <option value="24">24- Guelma</option>
+       <option value="25">25- Constantine</option>
+       <option value="26">26- Médéa</option>
+       <option value="27">27- Mostaganem</option>
+       <option value="28">28- M'Sila</option>
+       <option value="29">29- Mascara</option>
+       <option value="30">30- Ouargla</option>
+       <option value="31">31- Oran</option>
+    <option value="32">32- El Bayadh</option>
+    <option value="33">33- Illizi</option>
+    <option value="34">34- Bordj Bou Arreridj</option>
+    <option value="35">35- Boumerdès</option>
+    <option value="36">36- El Tarf</option>
+    <option value="37">37- Tindouf</option>
+    <option value="38">38- Tissemsilt</option>
+    <option value="39">39- El Oued</option>
+    <option value="40">40- Khenchela</option>
+    <option value="41">41- Souk Ahras</option>
+    <option value="42">42- Tipaza</option>
+    <option value="43">43- Mila</option>
+    <option value="44">44- Aïn Defla</option>
+    <option value="45">45- Naâma</option>
+    <option value="46">46- Aïn Témouchent</option>
+    <option value="47">47- Ghardaïa</option>
+    <option value="48">48- Relizane</option>
+    <option value="49">49- El M'Ghair</option>
+    <option value="50">50- El Meniaa</option>
+    <option value="51">51- Ouled Djellal</option>
+    <option value="52">52- Bordj Baji Mokhtar</option>
+    <option value="53">53- Béni Abbès</option>
+    <option value="54">54- Timimoun</option>
+    <option value="55">55- Touggourt</option>
+    <option value="56">56- Djanet</option>
+    <option value="57">57- In Salah</option>
+    <option value="58">58- In Guezzam</option>
+</select>
+<tr id="wilError"></tr>
+        </th>
+      </tr>
+      <tr>
+        <th id="acc5"><label for="tele">Phone Number :</label></th>
+        <th ><input id="tele" placeholder=" 0X XX XX XX XX" type="text" name="phon" oninput="validation_nour()"></th>
+      </tr>
+      <tr id="line3"></tr>
+      <tr>
+        <th id="acc6"><label for="Email">Email Address :</label></th>
+        <th ><input  id="Email" type="text" placeholder="your@email.com" name="E_mail" oninput="validation_nour()"></th>
+      </tr>
+      <tr id="line4"></tr>
+      <tr>
+        <th id="acc6"><label for="adre">Address :</label></th>
+        <th ><textarea id="adre"  placeholder="House No., Street Name, Neighborhood..." name="adresse" oninput="validation_nour()"></textarea></th>
+      </tr>
+      <tr id="line5"></tr>
+      <tr>
+        <th id="acc7"><label for="moot"> Password :</label></th>
+        <th ><input  id="moot" type="password"  placeholder=" enter a strong password" name="mot_de_passe" oninput="validation_nour()"></th>
+      </tr>
+     <tr id="line6"></tr>
+      <tr>
+        <th id="acc8"> <label for="confi">Confirm password :</label></th>
+         <th ><input  id="confi" type="password" placeholder="Repeat your password " oninput="validation_nour()"></th>
+      </tr>
+      <tr id="line7"></tr>
+      <tr>
+        <th id="acc9">Gender :</th>
+        <th id="acc10" ><input type="radio" name="sexe"  value="Male"> Male<input type="radio" name="sexe"   value="femal"oninput="validation_nour()">Female</th>
+        
+      </tr>
+      <tr id="line8"></tr>
+      <tr> 
+        <td></td><td>
+              <input type="submit" value="Sign Up"   id="betton"/>
+              <input type="reset" value="Clear" id="betton" /> </td></tr>
+    </table>
+  </form>
+  </body>
+</html>
+
+
+
+

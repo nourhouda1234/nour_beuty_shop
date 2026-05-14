@@ -1,0 +1,66 @@
+body{
+
+  background-image: url(kalfi.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+  
+}
+table{
+  
+  border-radius: 50px;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: auto;
+  padding: 20px 90px;
+
+}
+
+#betton:hover {
+  background-color: #0077ab;
+}
+#betton{
+  background-color: #0096d6;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 20px;
+ cursor: pointer;
+  font-weight: bold;
+  border:1px solid #ccc;
+ padding:8px;
+ transition: 0.4s;
+ 
+}
+#betton:focus{
+  outline: none;
+  border: 2px solid #0096d6;
+  box-shadow: 0 0 5px rgba(80, 190, 237, 0.5);
+}
+#n1,#n2{
+  color: #74b8f3;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+img {
+
+  mix-blend-mode: multiply;
+  filter: contrast(120%); 
+}
+td,
+th {
+  background-color: #e3f2fd96;
+  padding: 10px 10px;
+  font-size: smaller;
+}
+#titel{
+  color: #0096d6;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}

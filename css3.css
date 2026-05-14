@@ -1,0 +1,89 @@
+
+#head {
+    background-color: rgba(255, 255, 255, 0.619); 
+}
+#arb{
+    width: 80px;
+    height: auto;
+}
+#login {
+    text-align: center;
+    padding-left: 50px; 
+    font-size: 28px;
+    color: #1578db;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+    margin-top: -1;
+}
+#link {
+     padding-left: 50px;
+    text-decoration: none; 
+    color: rgb(14, 15, 18);
+    background-color: #3498db; 
+    padding: 10px 25px;
+    border-radius: 30px; 
+    font-weight: bold;
+    transition: 0.4s; 
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+#link:hover {
+    background-color: #2980b9; 
+    letter-spacing: 1px; 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-image:url(kalfi.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+#Effaclar,#anth,#cica,#hya 
+ {
+   background-color: #b0d4f99d;
+    padding: 10px;
+    border-radius: 8px;
+    color: #055593;
+    font-size: 20px;
+}
+#img {
+    max-width: 150px;    
+    height: 140px;     
+    object-fit: contain; 
+    background-color: rgba(251, 247, 247, 0.71); 
+    border-radius: 10px;    
+    padding: 10px;        
+    border: 1px solid #fefbfb62; 
+    display: block;        
+    margin: 0 auto;        
+}
+th {
+    vertical-align: bottom; 
+    padding: 10px;
+}
+#table{
+  
+  border-radius: 80px;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: auto;
+  padding: 20px 100px;
+}
+#prices th {
+    padding-top: 15px;
+    color: #4098f0; 
+    font-size: 18px;
+    width: 80px;       
+    height: 10px;     
+    object-fit: contain; 
+    background-color: rgba(245, 245, 245, 0.842); 
+    border-radius: 30px;  
+    padding: 0px;     
+    padding: 10px 70px; 
+}
+img {
+  mix-blend-mode: multiply;
+  filter: contrast(120%); 
+}
+

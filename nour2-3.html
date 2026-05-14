@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="ar">
+  <head>
+    <title>Product Order Page </title>
+     <link rel="stylesheet" href="css4.css">
+     <script src="java-product.js"></script>
+  </head>
+   <body>
+<form action="php33.php" method="post">
+    <table>
+      
+      <td rowspan="9"><img src="effaclar4.jpg" width="290"></td>
+      <tr>
+        <td id="titel">EFFCLAR</td><td></td>
+      </tr>
+      <tr>
+        <th id="i1"> Vendeur:</th>
+        <th id="in1">Nour beauty Shop </th>
+      </tr>
+      <tr>
+        <th id="i2">Prix :</th>
+        <th id="in2">6380 Da</th>
+      </tr>
+       <tr>
+        <th id="i3">Ref:</th>
+        <th id="in3">LRP-EF-01</th>
+      </tr>
+       
+      <tr>
+        <th id="n4">Type de peau :</th>
+        <th id="in4"><input type="checkbox" name="peau[]" value="Grasse">Grasse <br>
+        
+        <input type="checkbox" name="peau[]" value="Seche">Seche<br>
+          <input type="checkbox" name="peau[]" value="mixte">Mixte
+        </th>
+      </tr>
+       <input type="hidden" name="produit" value="EFFCLAR">
+<input type="hidden" name="vendeur" value="Nour beauty Shop">
+<input type="hidden" name="prix" value="9000">
+<input type="hidden" name="ref" value="LRP-EF-01">
+      <tr>
+        <th id="n5">Qunantite :</th>
+        <th id="in5"> 
+          <select name="quantite">
+           <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></th>
+      </tr>
+      <tr>
+        <td>
+            
+        <input type="submit" value="Commander" id="betton" onclick=" return validation_prouduct()"/></td>
+        <th></th>
+      </tr>
+    </table>
+  </form>
+   </body>
+  </html>
+
+
+
+
+

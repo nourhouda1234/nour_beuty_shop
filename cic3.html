@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <title>Product Order Page </title>
+    <link rel="stylesheet" href="css4.css">
+     <script src="java-product.js"></script>
+
+  </head>
+   <body>
+<form action="c3.php" method="post">
+    <table >
+      
+      <td rowspan="9"><img src="cic3.jpg" width="250"></td>
+       <tr> <td id="titel">Cicaplast</td><td></td></tr>
+      <tr>
+        <th id="i1">Vendeur:</th>
+        <th id="in1">Nour beauty Shop </th>
+      </tr>
+      <tr>
+        <th id="i2">Prix :</th>
+        <th id="in2">3000 Da</th>
+      </tr>
+       <tr>
+        <th id="i3">Ref:</th>
+        <th id="in3">LRP-CI-03</th>
+      </tr>
+       
+      <tr>
+        <td id="n4">Type de peau :</td>
+        <td id="in4"><input type="checkbox"  name="peau[]" value="Grasse">Grasse <br>
+        
+        <input type="checkbox"  name="peau[]" value="Seche">Seche<br>
+          <input type="checkbox"  name="peau[]" value="mixte">Mixte
+        </td>
+      </tr>
+       <input type="hidden" name="produit" value="EFFCLAR">
+<input type="hidden" name="vendeur" value="Nour beauty Shop">
+<input type="hidden" name="prix" value="9000">
+<input type="hidden" name="ref" value="LRP-EF-01">
+      <tr>
+        <th id="n5">Qunantite :</th>
+        <th id="in5"> 
+          <select name="quantite">
+           <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></th>
+      </tr>
+      <tr>
+        <td>
+        <input type="submit" id="betton"  value="Commander" onclick=" return validation_prouduct()" /></td><td></td>
+      </tr>
+    </table>
+    </form>
+    </body>
+  </html>
